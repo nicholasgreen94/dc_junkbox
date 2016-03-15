@@ -1,4 +1,47 @@
+img {
+  display: inline; }
+
+html, body {
+  overflow-x: hidden; }
+
+body {
+  font-size: 16px;
+  line-height: 1.6; }
+
 .container-fluid {
   padding: 0; }
+
+.navbar {
+  background: #853500;
+  padding-right: 15px; }
+
+.navbar-toggle {
+  border: none; }
+
+.navbar-default .navbar-nav > li:hover {
+  background: #4E7078; }
+  .navbar-default .navbar-nav > li:hover a {
+    color: #fff; }
+.navbar-default .navbar-nav > li > a {
+  color: #fff; }
+
+.navbar-default .navbar-nav .active a {
+  background: #4E7078;
+  color: #fff; }
+
+.navbar-default .navbar-toggle {
+  margin-right: 0;
+  padding-right: 0; }
+  .navbar-default .navbar-toggle:hover {
+    background: none; }
+  .navbar-default .navbar-toggle:active {
+    background: none; }
+  .navbar-default .navbar-toggle:focus {
+    background: none; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background: #fff; }
+
+.navbar-default .navbar-brand {
+  color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */

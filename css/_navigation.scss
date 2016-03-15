@@ -1,0 +1,58 @@
+
+// Navigation styles
+.navbar {
+  background: $red-orange;
+  padding-right: 15px;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar-default { 
+  .navbar-nav {
+    > li {
+      &:hover {
+        background: $turquoise;
+        a {
+          color: $white;
+        }
+      }
+      > a {
+        color: $white;
+      }
+    }
+  }
+}
+
+ // Active link 
+ .navbar-default { 
+   .navbar-nav {
+     .active {
+       a {
+          background: $turquoise;
+          color: $white;
+      }
+    }
+  }
+ }
+ 
+ // Menu Bar in mobile view 
+.navbar-default {
+  .navbar-toggle {
+    margin-right: 0;
+    padding-right: 0;
+    &:hover {
+      background: none;
+    }
+    &:active {
+      background: none;
+    }
+    &:focus {
+      background: none;
+    }
+     .icon-bar {
+    background: $white;
+    }
+  }
+ }
