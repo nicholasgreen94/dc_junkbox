@@ -1,8 +1,9 @@
 
 // Navigation styles
 .navbar {
-  background: $red-orange;
-  padding-right: 15px;
+  background: $white;
+  border-bottom: 1px solid $turquoise;
+  margin-bottom: 4px;
 }
 
 .navbar-toggle {
@@ -12,17 +13,22 @@
 .navbar-default { 
   .navbar-nav {
     > li {
-      &:hover {
-        background: $turquoise;
-        a {
+      padding: $padding * 3.75 0 $padding * 3.75 $padding * 7.5;
+      > a {
+        color: $turquoise;
+        display: inline-block;
+        padding: 0;
+        &:hover {
+          background: $turquoise;
           color: $white;
         }
       }
-      > a {
-        color: $white;
-      }
     }
   }
+}
+
+.navbar-default {
+    border: none;
 }
 
  // Active link 
@@ -30,18 +36,28 @@
    .navbar-nav {
      .active {
        a {
-          background: $turquoise;
-          color: $white;
+          background: none;
+          color: $turquoise;
       }
     }
   }
  }
  
+ #navbar {
+   border: none;
+ }
+ 
+ .navbar-collapse {
+   border: 1px solid $turquoise;
+   ul {
+     margin: 0 $margin * 7.5 0 $margin * -7.5;
+   }
+ }
+ 
  // Menu Bar in mobile view 
 .navbar-default {
   .navbar-toggle {
-    margin-right: 0;
-    padding-right: 0;
+    margin-right: $margin * 3.75;
     &:hover {
       background: none;
     }
@@ -52,7 +68,7 @@
       background: none;
     }
      .icon-bar {
-    background: $white;
+    background: $turquoise;
     }
   }
  }

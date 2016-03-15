@@ -5,11 +5,20 @@ html,body {
 }
 
 body {
+  font-family: $secondary-font;
   font-size: $font-size;
   line-height: 1.6;
 }
  
 .container-fluid {
-  padding: 0;
+  margin: 0 -15px;
+  .jumbotron {
+    border-radius: 0;
+  }
+}
+
+// index.html 
+.jumbotron {
+  background: $red-orange;
 }
 

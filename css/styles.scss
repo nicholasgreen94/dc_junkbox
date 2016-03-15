@@ -5,6 +5,8 @@ img {
 
 // Importing stylesheets needed for page
 @import "_variables.scss";
+@import "_extends.scss";
+@import "_mixin.scss";
 @import "_layout.scss";
 @import "_navigation.scss ";
 @import "_buttons.scss";
