@@ -17,10 +17,11 @@
       > a {
         color: $turquoise;
         display: inline-block;
+        font-weight: 400;
         padding: 0;
         &:hover {
-          background: $turquoise;
-          color: $white;
+          color: $red-orange;
+          font-size: $small-heading;
         }
       }
     }
@@ -37,7 +38,11 @@
      .active {
        a {
           background: none;
-          color: $turquoise;
+          color: $red-orange;  
+          &:hover {
+            background: none;
+            color: $red-orange;
+          }
       }
     }
   }

@@ -8,7 +8,7 @@ html, body {
 body {
   font-family: "Oswald";
   font-size: 16px;
-  line-height: 1.6; }
+  line-height: 1.8; }
 
 .container-fluid {
   margin: 0 -15px; }
@@ -16,7 +16,32 @@ body {
     border-radius: 0; }
 
 .jumbotron {
-  background: #853500; }
+  background: url("https://images.unsplash.com/photo-1414497729697-b8555ba6c1cc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=64c19da4ff18d00fd138c96749fb81c5"), #853500;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
+  margin-bottom: 5.625em;
+  padding: 3.125em 0.9375em 0; }
+
+.featured-item,
+.story,
+.main-footer {
+  border-top: 2px solid #4E7078;
+  padding: 0 0.9375em; }
+
+.featured-item-p {
+  background: url("https://images.unsplash.com/photo-1447877085163-3cce903855cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c9466077853a47daa068e55a61ac3fa7");
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5em;
+  padding: 18.75em 0 0; }
+  .featured-item-p p {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+    color: #fff;
+    font-weight: 300;
+    padding: 0.9375em 0 0.9375em 0.9375em; }
 
 .navbar {
   background: #fff;
@@ -31,17 +56,21 @@ body {
   .navbar-default .navbar-nav > li > a {
     color: #4E7078;
     display: inline-block;
+    font-weight: 400;
     padding: 0; }
     .navbar-default .navbar-nav > li > a:hover {
-      background: #4E7078;
-      color: #fff; }
+      color: #853500;
+      font-size: 1.333em; }
 
 .navbar-default {
   border: none; }
 
 .navbar-default .navbar-nav .active a {
   background: none;
-  color: #4E7078; }
+  color: #853500; }
+  .navbar-default .navbar-nav .active a:hover {
+    background: none;
+    color: #853500; }
 
 #navbar {
   border: none; }
@@ -62,20 +91,59 @@ body {
   .navbar-default .navbar-toggle .icon-bar {
     background: #4E7078; }
 
+.btn {
+  color: #fff; }
+  .btn:hover {
+    color: #fff; }
+
+.btn-junkbox {
+  background: #853500;
+  border: 1px solid #853500; }
+  .btn-junkbox:hover {
+    background: #522100;
+    border: 1px solid #522100; }
+
+.btn-about {
+  background: #4E7078;
+  border: 1px solid #4E7078; }
+  .btn-about:hover {
+    background: #3a5359;
+    border: 1px solid #3a5359; }
+
 .navbar-default .navbar-brand {
   text-transform: uppercase;
   color: #4E7078;
-  font-size: 1.777em;
+  font-size: 1.333em;
   font-weight: 300;
   letter-spacing: 2px; }
   .navbar-default .navbar-brand:hover {
     color: #853500; }
 
-h1 {
+h1,
+h2,
+h3 {
   text-transform: uppercase; }
 
 .jumbotron h1 {
   color: #fff;
-  font-size: 3.157em; }
+  font-size: 3.157em;
+  letter-spacing: 2px; }
+.jumbotron small {
+  color: #fff;
+  font-size: 44%;
+  font-weight: 300; }
+
+h2 {
+  color: #4E7078;
+  font-size: 2.369em;
+  font-weight: 200;
+  margin-bottom: 1.5625em; }
+  h2 small {
+    color: #4E7078;
+    font-size: 66%;
+    font-weight: 700; }
+
+.featured-item img {
+  margin: 0 0 8em; }
 
 /*# sourceMappingURL=styles.css.map */

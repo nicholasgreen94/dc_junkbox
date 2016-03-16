@@ -1,0 +1,25 @@
+
+.btn {
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-junkbox {
+  background: $red-orange;
+  border: 1px solid $red-orange;
+  &:hover {
+    background: darken($red-orange, 10%);
+    border: 1px solid darken($red-orange, 10%);
+  }
+}
+
+.btn-about {
+  background: $turquoise;
+  border: 1px solid $turquoise;
+  &:hover {
+    background: darken($turquoise, 10%);
+    border: 1px solid darken($turquoise, 10%);
+  }
+}

@@ -6,7 +6,7 @@
   .navbar-brand { 
     @include upcase;
     color: $turquoise;
-    font-size: $minor-heading;
+    font-size: $small-heading;
     font-weight: 300;
     letter-spacing: 2px;
   &:hover {
@@ -17,13 +17,33 @@
 
 // Headings
 
-h1 {
+h1,
+h2,
+h3 {
   @include upcase;
 }
 
 .jumbotron {
   h1 {
     color: $white;
-    font-size: $heading;
+    font-size: $main-heading;
+    letter-spacing: 2px;
+  }
+  small {
+    color: $white;
+    font-size: 44%;
+    font-weight: 300;
+  }
+}
+
+h2 {
+  color: $turquoise;
+  font-size: $secondary-heading;
+  font-weight: 200;
+  margin-bottom: $margin * 12.5;
+  small {
+    color: $turquoise;
+    font-size: 66%;
+    font-weight: 700;
   }
 }

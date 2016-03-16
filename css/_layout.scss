@@ -7,7 +7,7 @@ html,body {
 body {
   font-family: $secondary-font;
   font-size: $font-size;
-  line-height: 1.6;
+  line-height: 1.8;
 }
  
 .container-fluid {
@@ -17,8 +17,42 @@ body {
   }
 }
 
-// index.html 
+// index.html Jumbotron
 .jumbotron {
-  background: $red-orange;
+  background: url("https://images.unsplash.com/photo-1414497729697-b8555ba6c1cc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=64c19da4ff18d00fd138c96749fb81c5"),
+  $red-orange;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
+  margin-bottom: $margin * 45;
+  padding: $padding * 25 $padding * 7.5 0;
 }
 
+// Setting initial padding for featured item, story and footer
+.featured-item,
+.story,
+.main-footer {
+  border-top: 2px solid $turquoise;
+  padding: 0 $padding * 7.5;
+}
+
+.featured-item-p {
+  background: url("https://images.unsplash.com/photo-1447877085163-3cce903855cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c9466077853a47daa068e55a61ac3fa7");
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: $margin * 40;
+  padding: $padding * 150 0 0;
+  p {
+    background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,0.85));
+    color: $white;
+    font-weight: 300;
+    padding: $padding * 7.5 0 $padding * 7.5 $padding * 7.5;
+  }
+}
+
+//  Story 
+.story {
+  
+}
