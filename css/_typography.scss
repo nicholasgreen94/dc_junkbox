@@ -40,10 +40,12 @@ h2 {
   color: $turquoise;
   font-size: $secondary-heading;
   font-weight: 200;
-  margin-bottom: $margin * 12.5;
-  small {
-    color: $turquoise;
-    font-size: 66%;
-    font-weight: 700;
+  margin-bottom: $margin * 5;
+}
+
+
+.story {
+  p {
+    color: $navy-blue;
   }
 }

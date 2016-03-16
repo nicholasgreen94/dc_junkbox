@@ -29,21 +29,25 @@ body {
   padding: $padding * 25 $padding * 7.5 0;
 }
 
-// Setting initial padding for featured item, story and footer
-.featured-item,
-.story,
-.main-footer {
-  border-top: 2px solid $turquoise;
-  padding: 0 $padding * 7.5;
-}
-
-.featured-item-p {
-  background: url("https://images.unsplash.com/photo-1447877085163-3cce903855cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c9466077853a47daa068e55a61ac3fa7");
-  background-position: 0% 50%;
+.featured-item {
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+  url("https://images.unsplash.com/photo-1415383552502-d44cf10dfc7e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=43377c559d50c48cf24af6244c2caabe");
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: $margin * 40;
-  padding: $padding * 150 0 0;
+  .feature-item-title {
+    padding: $padding * 35 0 $padding * 100 15px;
+  }
+    h2 {
+      color: $white;
+      margin: 0;
+    }
+    span {
+      color: $white;
+      font-size: $minor-heading;
+      font-weight: 700;
+  } 
   p {
     background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,0.85));
     color: $white;
@@ -52,7 +56,13 @@ body {
   }
 }
 
+
 //  Story 
 .story {
-  
+  border: none;
+  margin-bottom: $margin * 40;
+  padding: 0 $padding * 7.5;
+  h2 {
+    padding-top: $padding * 2;
+  }
 }
