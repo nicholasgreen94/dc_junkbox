@@ -13,8 +13,8 @@ $red-orange-overlay: linear-gradient(
   rgba(133, 53, 0,0.75));
 
 // Initial fonts
-$primary-font: "Raleway";
-$secondary-font: "Oswald";
+$primary-font: "Oswald";
+$secondary-font: "LibreCaslon";
 
 // Font Styles 
 $font-size: 16px; //1em
@@ -27,3 +27,8 @@ $small-heading: 1.333em;
 // Inital margin and padding sizes
 $margin: 0.125em;
 $padding: 0.125em;
+
+// Media queries 
+$small-mq: 46.875em; // 750px / 16px = 46.875em
+$medium-mq:  60.625em; // 970px / 16px = 60.625em
+$large-md: 73.125em; // 1170px / 16px = 73.125em

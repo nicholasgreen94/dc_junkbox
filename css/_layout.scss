@@ -5,15 +5,18 @@ html,body {
 }
 
 body {
-  font-family: $secondary-font;
+  font-family: $primary-font;
   font-size: $font-size;
   line-height: 1.8;
 }
- 
+
 .container-fluid {
   margin: 0 -15px;
   .jumbotron {
     border-radius: 0;
+    @media only screen and (min-width: $small-mq) {
+      padding-left: 15px;
+    }
   }
 }
 
@@ -27,6 +30,12 @@ body {
   height: 360px;
   padding: 0 $padding * 7.5;
   @include section-top-margin;
+  @media only screen and (min-width: $small-mq) {
+    height: 440px;
+  }
+  @media only screen and (min-width: $medium-mq) {
+    height: 500px;
+  }
   span {
     color: $white;
     display: block;
@@ -43,8 +52,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   .feature-item-title {
-  padding: 0 0 $padding * 100 15px;
+  padding: 0 0 $padding * 100 $padding * 15;
   @include section-top-margin;
+  }
+  p {
+    padding: $padding * 7.5;
+  @media only screen and (min-width: $medium-mq) {
+    padding: 65px $padding * 7.5 194px;
+    }
   }
 }
 

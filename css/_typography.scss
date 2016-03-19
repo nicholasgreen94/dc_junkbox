@@ -2,9 +2,11 @@
 // Import files for font use
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700|Raleway:400,100,200,300,500,700);
 
+
+
 // 
 p {
-  font-size: 0.9em;
+  font-family: $secondary-font;
   margin-bottom: 0;
 }
 
@@ -75,15 +77,23 @@ h3 {
     }
     span {
       color: $white;
+      display: block;
       font-size: $minor-heading;
       font-weight: 700;
+      margin-bottom: $margin * 4;
   } 
 }
+  .btn {
+    display: inline-block;
+  }
   p {
     background: $red-orange-overlay;
     color: $white;
+    font-family: $primary-font;
     font-weight: 300;
-    padding: $padding * 7.5;
+    @media only screen and (min-width: $medium-mq) {
+      font-size: $small-heading;
+      }
     }
 }
 

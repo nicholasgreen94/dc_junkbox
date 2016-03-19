@@ -14,6 +14,9 @@ body {
   margin: 0 -15px; }
   .container-fluid .jumbotron {
     border-radius: 0; }
+    @media only screen and (min-width: 46.875em) {
+      .container-fluid .jumbotron {
+        padding-left: 15px; } }
 
 .jumbotron {
   background: url("https://images.unsplash.com/photo-1414497729697-b8555ba6c1cc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=64c19da4ff18d00fd138c96749fb81c5"), #853500;
@@ -23,6 +26,12 @@ body {
   height: 360px;
   padding: 0 0.9375em;
   padding-top: 4.375em; }
+  @media only screen and (min-width: 46.875em) {
+    .jumbotron {
+      height: 440px; } }
+  @media only screen and (min-width: 60.625em) {
+    .jumbotron {
+      height: 500px; } }
   .jumbotron span {
     color: #fff;
     display: block;
@@ -36,8 +45,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
   .featured-item .feature-item-title {
-    padding: 0 0 12.5em 15px;
+    padding: 0 0 12.5em 1.875em;
     padding-top: 4.375em; }
+  .featured-item p {
+    padding: 0.9375em; }
+    @media only screen and (min-width: 60.625em) {
+      .featured-item p {
+        padding: 65px 0.9375em 194px; } }
 
 .story {
   border: none;
@@ -55,6 +69,9 @@ body {
 
 .navbar-default .navbar-nav > li {
   padding: 0.46875em 0 0.46875em 0.9375em; }
+  @media only screen and (min-width: 46.875em) {
+    .navbar-default .navbar-nav > li {
+      padding: 0.75em 0.875em 0.46875em; } }
   .navbar-default .navbar-nav > li > a {
     color: #4E7078;
     display: inline-block;
@@ -114,7 +131,7 @@ body {
     border: 1px solid #3a5359; }
 
 p {
-  font-size: 0.9em;
+  font-family: "LibreCaslon";
   margin-bottom: 0; }
 
 a {
@@ -164,13 +181,20 @@ h3 {
   margin: 0; }
 .featured-item .feature-item-title span {
   color: #fff;
+  display: block;
   font-size: 1.777em;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: 0.5em; }
+.featured-item .btn {
+  display: inline-block; }
 .featured-item p {
   background: linear-gradient(rgba(133, 53, 0, 0.75), rgba(133, 53, 0, 0.75));
   color: #fff;
-  font-weight: 300;
-  padding: 0.9375em; }
+  font-family: "Oswald";
+  font-weight: 300; }
+  @media only screen and (min-width: 60.625em) {
+    .featured-item p {
+      font-size: 1.333em; } }
 
 .story h2 {
   margin: 0 0 0.25em 0; }
