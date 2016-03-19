@@ -2,6 +2,29 @@
 // Import files for font use
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700|Raleway:400,100,200,300,500,700);
 
+// 
+p {
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
 .navbar-default {
   .navbar-brand { 
     @include upcase;
@@ -16,11 +39,11 @@
 }
 
 // Headings
-
 h1,
 h2,
 h3 {
   @include upcase;
+  margin: 0;
 }
 
 .jumbotron {
@@ -28,11 +51,6 @@ h3 {
     color: $white;
     font-size: $main-heading;
     letter-spacing: 2px;
-  }
-  small {
-    color: $white;
-    font-size: 44%;
-    font-weight: 300;
   }
 }
 
@@ -43,9 +61,55 @@ h2 {
   margin-bottom: $margin * 5;
 }
 
+h3 {
+  font-size: $small-heading;
+  margin-bottom: $margin * 6;
+}
 
+// Feature Item typography
+.featured-item {
+  .feature-item-title {
+    h2 {
+      color: $white;
+      margin: 0;
+    }
+    span {
+      color: $white;
+      font-size: $minor-heading;
+      font-weight: 700;
+  } 
+}
+  p {
+    background: $red-orange-overlay;
+    color: $white;
+    font-weight: 300;
+    padding: $padding * 7.5;
+    }
+}
+
+// Story typography
 .story {
+  h2 {
+    margin: 0 0 $margin * 2 0;
+  }
   p {
     color: $navy-blue;
+    padding-bottom: $padding * 10;
   }
 }
+
+// footer for index.html
+  .main-footer {
+    li {
+      margin-left: $margin * 4;
+    }
+    a {
+      &:hover {
+        color: $turquoise;
+      }
+    }
+    address {
+      line-height: 1.85;
+      margin-left: $margin * 4;
+    }
+  }

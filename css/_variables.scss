@@ -7,6 +7,11 @@ $dark-red-orange: #4F2A11; // Dark Red-Orange
 $light-grey: #F9EDE1; // Light Grey
 $white: #fff; // White
 
+// Overlays
+$red-orange-overlay: linear-gradient(
+  rgba(133, 53, 0,0.75), 
+  rgba(133, 53, 0,0.75));
+
 // Initial fonts
 $primary-font: "Raleway";
 $secondary-font: "Oswald";

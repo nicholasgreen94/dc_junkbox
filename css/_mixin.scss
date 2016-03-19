@@ -2,3 +2,7 @@
 @mixin upcase {
   text-transform: uppercase;
 }
+
+@mixin section-top-margin {
+  padding-top: $padding * 35;
+}
