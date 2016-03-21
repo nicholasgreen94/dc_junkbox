@@ -67,8 +67,16 @@ body {
 .story {
   border: none;
   padding: 0 $padding * 7.5;
+  margin-bottom: $margin * 6;
   text-align: center;
   @include section-top-margin;
+  figcaption {
+    font-size: $small-heading;
+    margin-top: $margin * 8;
+  }
+  .btn {
+    margin-top: $margin * 12;
+  }
 }
 
 

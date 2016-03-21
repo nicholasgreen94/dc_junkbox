@@ -56,8 +56,14 @@ body {
 .story {
   border: none;
   padding: 0 0.9375em;
+  margin-bottom: 0.75em;
   text-align: center;
   padding-top: 4.375em; }
+  .story figcaption {
+    font-size: 1.333em;
+    margin-top: 1em; }
+  .story .btn {
+    margin-top: 1.5em; }
 
 .navbar {
   background: #fff;
@@ -209,9 +215,6 @@ h3 {
 .main-footer address {
   line-height: 1.85;
   margin-left: 0.5em; }
-
-.featured-item img {
-  margin: 0 0 8em; }
 
 .main-footer {
   background: #853500;
